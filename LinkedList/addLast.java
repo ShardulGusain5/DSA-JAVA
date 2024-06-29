@@ -48,6 +48,27 @@ class LinkedList1 {
         }
         System.out.println(temp.data);
       }    
+      //function to getvalue at given index
+      public int getValueAt(int idx)
+      {
+        if(idx>= size || size==0) 
+        {
+            return -1;
+
+        }
+        else 
+        {
+            Node temp = head;
+            int i =0;
+            while(i<idx) 
+            {
+                temp = temp.next;
+                i++;
+            }
+            return temp.data;
+
+        }
+      }
 }
 //the main method
 public class addLast {
@@ -55,6 +76,9 @@ public class addLast {
         LinkedList1 L = new LinkedList1();
         L.addLast(10);
         L.addLast(20);
+        L.addLast(30);
+        L.addLast(40);
         L.display();
+        System.out.println("hola" + L.getValueAt(2));
     }
 }
