@@ -18,13 +18,17 @@ public class nPr {
         }
         return nFact;
     }
+    public static void display(int nFact,int rFact)
+    {
+        System.out.println(nFact/rFact);
+    }
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn .nextInt();
         int r = scn.nextInt();
         int nFact = fact(n);
         int rFact = fact(n-r);
-
-        System.out.println(nFact/rFact);
+        display(nFact,rFact);
+        
     }
 }
