@@ -2,8 +2,8 @@ package Arrays;
 
 public class Difference {
     public static void main(String[] args) {
-        int [] first = {9,9};
-        int [] second = {9};
+        int [] first = {1,0,0,0};
+        int [] second = {9,9,9};
         int result[]= new int[first.length];
         int i = first.length-1;
         int j = second.length-1;
@@ -20,7 +20,7 @@ public class Difference {
             {
                 secondval= 0;
             }
-            if(first[i]>=secondval)
+            if(first[i]+carry>=secondval)
             {
                 result[k]= first[i]+carry-secondval;
                 carry =0;
@@ -34,9 +34,22 @@ public class Difference {
             j--;
             k--;
         }
-        for(int l =0;l<result.length;l++)
+        int l= 0;
+        while(l<=result.length)
+        {
+            if(result[l]!=0)
+            {
+                break;
+            }
+            else 
+            {
+                l++;
+            }
+        }
+        while(l<result.length)
         {
             System.out.println(result[l]);
+            l++;
         }
     }
 }
