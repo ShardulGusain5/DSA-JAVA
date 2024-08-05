@@ -34,6 +34,7 @@ public class Difference {
             j--;
             k--;
         }
+        // PRINTING while skipping the initial zeroes
         int l= 0;
         while(l<=result.length)
         {
