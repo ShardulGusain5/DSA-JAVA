@@ -3,7 +3,7 @@ package ArraysTwoD;
 public class MatrixMultiplication {
     public static void main(String[] args) {
         int [][] m1= {{1,2,3},{4,5,6}};              //2x3
-        int [][] m2 = {{1,2,3,4},{1,2,3,4},{1,2,3,4}}; //3*4
+        int [][] m2 = {{1,2,3,4},{1,2,3,4},{1,2,3,4}}; //3x4
 
         int result[][] = new int [2][4];
 
